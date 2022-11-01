@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div id="container">
+        <div class="logopy">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo" class="logopy"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../pages/sopa.html">Sopa Paraguaya</a></li>
+                <li><a href="../pages/pastel.html">Pastel Mandio</a></li>
+                <li><a href="../pages/chipa.html">Chipa Tradicional</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="imagedad">
+            <div class="imagepy">
+                <img src="../images/paraguay.png" alt="paraguay" class="imagepy">
+            </div>
+        </div>
+        <header class="titulo">
+            <h1>CONTACTANOS!</h1>
+            <div class="sobre__move"></div>
+        </header>
+        <main class="logobandera">
+            <div class="carta__contacto">
+                <h2 class="contactotext">Por favor, completa los datos del siguiente fomulario junto a la consulta y/o duda que tengas y te la estaremos respondiendo a la brevedad!</h2>
+                <div class="carta__contacto--datos">
+                    <form action="">
+                        <div class="nomape">
+                            <div class="nombredad">
+                                <label for="Nombre" class="nombre">Nombre</label>
+                                <input type="text" name="Nombre" class="nombrerta">
+                            </div>
+                            <div class="apellidodad">
+                                <label for="Apellido" class="apellido">Apellido</label>
+                                <input type="text" name="Apellido" class="apellidorta">
+                            </div>
+                        </div>
+                        <div class="numail">
+                            <div class="numerodad">
+                                <label for="Numero" class="celular">Celular</label>
+                                <input type="Numero" name="Numero" class="celularrta">
+                            </div>
+                            <div class="maildad">
+                                <label for="Email" class="mail">Mail</label>
+                                <input type="mail" name="Email" class="mailrta">
+                            </div>
+                        </div>
+                        <div class="consultadad">
+                            <label for="Consulta" class="consulta">Consulta</label>
+                            <input type="text" name="Consulta" class="consultarta">
+                        </div>
+                        <div class="botones">
+                            <input type="reset" value="Limpiar" class="limpiar">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Enviar
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLabel">CONFIRMACION</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Esta por generar una nueva consulta. ¿Desea enviarlo?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="button" class="btn btn-primary">Continuar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="copyr">
+            <p class="textcopyr">© 2022 Tembiu He, todos los derechos reservados.</p> 
+        </footer>
+    </div>
+</body>

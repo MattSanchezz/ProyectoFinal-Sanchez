@@ -1,0 +1,606 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+        360deg,
+        rgba(64, 150, 144, 0.575) 0%,
+        #9efd9e
+    );
+    background-attachment: fixed;
+}
+#container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+        "logopy menu menu menu imagepy"
+        "titulo titulo titulo titulo titulo"
+        "logobandera logobandera logobandera logobandera logobandera"
+        "proxrece proxrece proxrece proxrece proxrece"
+        "copyr copyr copyr copyr copyr";
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+}
+
+.logopy { 
+    grid-area: logopy;
+    width: 160px;
+    height: 160px;
+    margin: 50px;
+    margin-top: 20px;
+}
+
+.menu { 
+    grid-area: menu; 
+    background-color: #282828
+}
+
+.imagedad{
+    overflow: hidden;
+}
+
+.imagepy {
+    grid-area: imagepy;
+    width: 125px;
+    height: 100px;
+    margin: 100px;
+    margin-top: 80px;
+    transform: translate(-50%, -50%);
+    animation: latido 1.4s linear infinite;
+}
+
+.titulo {
+    grid-area: titulo;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 75px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 48px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.logobandera img{
+    width: 100%;
+}
+
+.logobandera {
+    grid-area: logobandera;
+    margin: 30px;
+    margin-top: 30px;
+}
+.proxrece{
+    grid-area: proxrece;
+}
+.redes{
+    grid-area: proxrece;
+    display: flex;
+    justify-content: center;
+}
+.prox{
+    height: 84px;
+    margin: 30px;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 220px;
+    font-size: 36px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+.sig{
+    height: 25px;
+    margin: 30px;
+    margin-top: 5px;
+    font-family: Lemon;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 12px;
+    color: #000000;
+    display: flex;
+    justify-content: center
+}
+.faceicon{
+    height: 45px;
+    margin: 45px;
+    margin-top: 10px;
+}
+.twicon{
+    height: 45px;
+    margin: 45px;
+    margin-top: 10px;
+}
+.facetext{
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+}
+.twtext{
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+}
+  
+.copyr {
+    grid-area: copyr;
+
+}
+.textcopyr{
+    width: 100%;
+    height: 29px;
+    margin: 30px;
+    margin-top: 20px;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+nav ul{
+    margin-top: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+nav ul li {
+    font-family: fantasy;
+    padding: 45px 45px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.carta__ingredientes{
+    width: 698px;
+    height: 500px;
+    margin-left: 670px;
+    margin-top: 5px;
+    background: #D9D9D9;
+}
+.carta__video{
+    width: 1297px;
+    height: 500px;
+    left: 71px;
+    top: 753px;
+    background: #D9D9D9;
+}
+.imgcomida{
+    width: 555px;
+    height: 401px;
+    left: 71px;
+    top: 306px;
+}
+.ingre{ 
+    width: 310px;
+    height: 80px;
+    left: 193px;
+    top: 0px;
+    font-family: fantasy;
+    font-style: normal;
+    font-weight: 80px;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+}
+.lista{
+    width: 500px;
+    height: 256px;
+    left: 65px;
+    top: 40px;
+    font-family: cursive;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 25px;
+    line-height: 48px;
+    color: #000000;
+}
+.videotext{
+    width: 650px;
+    height: 96px;
+    margin-left: 325px;
+    margin-top: 20px;
+    font-family: fantasy;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+.carta__vervideo{
+    width: 900px;
+    height: 450px;
+    margin-left: 350px;
+    margin-top: 40px;
+}
+.carta__masa{
+    width: 280px;
+    height: 300px;
+    left: 0px;
+    top: 64px;
+}
+.carta__relleno{
+    width: 280px;
+    height: 300px;
+    right: 0px;
+    top: 64px;
+}
+.masa{
+    width: 123px;
+    height: 32px;
+    left: 100px;
+    top: 0px;  
+    font-family: fantasy;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+.relleno{
+    width: 123px;
+    height: 32px;
+    right: 86px;
+    top: 0px;
+    font-family: fantasy;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+.lista__pastel{
+
+    width: 280px;
+    height: 286px;
+    left: 0px;
+    top: 35px;
+    font-family: cursive;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.carta__contacto{
+    left: 300px;
+    top: 370px;
+    background: #D9D9D9;
+}
+.contactotext{
+    height: 220px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 32px;
+    line-height: 64px;
+    text-align: center;
+    color: #000000;
+}
+.carta__contacto--datos{
+    height: 650px;
+    margin-top: 20px;
+    background: #000000;
+}
+.nombre{
+    height: 32px;
+    margin-top: 20px;
+    font-family: 'Lekton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.nombrerta{
+    margin: 25px;
+    height: 40px;
+    margin-top: 20px;
+    background: #D9D9D9;
+}
+.apellido{
+    height: 32px;
+    margin-top: 20px;
+    font-family: 'Lekton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.apellidorta{
+    margin: 25px;
+    height: 40px;
+    margin-top: 20px;
+    background: #D9D9D9;
+}
+.celular{
+    height: 32px;
+    margin-top: 20px;
+    font-family: 'Lekton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.celularrta{
+    margin: 25px;
+    height: 40px;
+    margin-top: 20px;
+    background: #D9D9D9;
+}
+.mail{
+    height: 32px;
+    margin-top: 20px;
+    font-family: 'Lekton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.mailrta{
+    margin: 25px;
+    height: 40px;
+    margin-top: 20px;
+    background: #D9D9D9;
+}
+.consulta{
+    height: 32px;
+    margin-top: 15px;
+    font-family: 'Lekton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+.consultarta{
+    height: 150px;
+    text-align: left;
+    background: #D9D9D9;
+    margin: 20px;
+    padding: 100px
+}
+.limpiar{
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    background: #DD647A;
+}
+.enviar{
+    width: 90px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background: #64dd7f
+}
+.sobre__move {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #eee;
+    border-right: 120px solid #ddd;
+    border-bottom: 50px solid #ccc;
+    border-left: 120px solid #ddd;
+    margin: auto;
+    margin-top: 2%;
+}
+.sobre__move:hover {
+    animation: agitar 1s;
+    animation-iteration-count: infinite;
+}
+.nombredad{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.apellidodad{
+    display: flex;
+    justify-content: center;
+}
+.numerodad{
+    display: flex;
+    justify-content: center;
+}
+.maildad{
+    display: flex;
+    justify-content: center;
+}
+.consultadad{
+    display: flex;
+    justify-content: center;
+}
+.nomape{
+    display: flex;
+    justify-content: center;
+}
+.numail{
+    display: flex;
+    justify-content: center;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
+@keyframes latido {
+    0%{
+        transform: translate(-50%, -50%)  scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%)  scale(1.4);
+    }
+    50% {
+        transform: translate(-50%, -50%)  scale(1.2);
+    }
+    75% {
+        transform: translate(-50%, -50%)  scale(1.4);
+    }
+    100%{
+        transform: translate(-50%, -50%)  scale(1);
+    }
+}
+@keyframes agitar {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #container {
+        grid-template-areas: 
+        "logopy imagepy"
+        "menu menu"
+        "titulo titulo"
+        "logobandera logobandera"
+        "proxrece proxrece"
+        "copyr copyr";
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .imagedad{
+        overflow: hidden;
+    }
+    .imagepy {
+        grid-area: imagepy;
+        width: 125px;
+        height: 100px;
+        margin: 100px;
+        margin-top: 80px;
+        transform: translate(-50%, -50%);
+        animation: latido 1.4s linear infinite;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: black;
+    }
+    #container {
+        grid-template-areas: 
+        "imagepy"
+        "logopy"
+        "menu"
+        "titulo"
+        "logobandera"
+        "proxrece"
+        "copyr";
+        grid-template-columns: 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .imagedad{
+        overflow: hidden;
+    }
+    .imagepy {
+        grid-area: imagepy;
+        width: 50px;
+        height: 30px;
+        margin-left: 150px;
+        margin-top: 50px;
+        transform: translate(-50%, -50%);
+        animation: latido 1.4s linear infinite;
+        display: flex;
+    }
+    .logopy { 
+        grid-area: logopy;
+        width: 160px;
+        height: 160px;
+        margin: 120px;
+        margin-top: 10px;
+        display: flex;
+    }
+    .sobre__move{
+        display: none;
+    }
+    .nombredad{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+    .apellidodad{
+        display: flex;
+        justify-content: center;
+    }
+    .numerodad{
+        display: flex;
+        justify-content: center;
+    }
+    .maildad{
+        display: flex;
+        justify-content: center;
+    }
+    .consultadad{
+        display: flex;
+        justify-content: center;
+    }
+    .nomape{
+        display: inline;
+        justify-content: center;
+    }
+    .numail{
+        display: inline;
+        justify-content: center;
+    }
+}
