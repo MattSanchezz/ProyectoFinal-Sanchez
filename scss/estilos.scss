@@ -56,7 +56,6 @@ body {
 .titulo {
     grid-area: titulo;
     width: 100%;
-    margin-left: 30px;
     margin-top: 75px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
@@ -92,7 +91,7 @@ body {
     font-style: normal;
     font-weight: 220px;
     font-size: 36px;
-    line-height: 12px;
+    line-height: 30px;
     text-align: center;
     color: #000000;
     display: flex;
@@ -113,12 +112,12 @@ body {
 }
 .faceicon{
     height: 45px;
-    margin: 45px;
+    margin: 20px;
     margin-top: 10px;
 }
 .twicon{
     height: 45px;
-    margin: 45px;
+    margin: 20px;
     margin-top: 10px;
 }
 .facetext{
@@ -126,7 +125,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 15px;
     text-align: center;
     color: #000000;
@@ -136,7 +135,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 15px;
     text-align: center;
     color: #000000;
@@ -149,7 +148,6 @@ body {
 .textcopyr{
     width: 100%;
     height: 29px;
-    margin: 30px;
     margin-top: 20px;
     font-family: 'Istok Web';
     font-style: normal;
@@ -553,6 +551,106 @@ nav ul li {
     }
     .imagedad{
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .imagepy {
+        grid-area: imagepy;
+        width: 50px;
+        height: 30px;
+        margin-left: 150px;
+        margin-top: 35px;
+        transform: translate(-50%, -50%);
+        animation: latido 1.4s linear infinite;
+        display: flex;
+        justify-content: center;
+    }
+    .logopy { 
+        grid-area: logopy;
+        width: 100px;
+        height: 100px;
+        margin: 225px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .sobre__move{
+        display: none;
+    }
+    .nombredad{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+    .apellidodad{
+        display: flex;
+        justify-content: center;
+    }
+    .numerodad{
+        display: flex;
+        justify-content: center;
+    }
+    .maildad{
+        display: flex;
+        justify-content: center;
+    }
+    .consultadad{
+        display: flex;
+        justify-content: center;
+    }
+    .nomape{
+        display: inline;
+        justify-content: center;
+    }
+    .numail{
+        display: inline;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 650px) {
+    body {
+        background-color: black;
+    }
+    #container {
+        grid-template-areas: 
+        "imagepy"
+        "logopy"
+        "menu"
+        "titulo"
+        "logobandera"
+        "imgcomi"
+        "rece"
+        "proxrece"
+        "copyr";
+        grid-template-columns: 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .menu{
+        grid-area: menu;
+        background-color: none;
+    }
+    nav ul{
+        margin-top: 10px;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    nav ul li {
+        font-family: fantasy;
+        padding: 20px 20px;
+        border-radius: 30px;
+        background-color: #e9ecef;
+        display: flex;
+        justify-content: center;
+    }
+    .imagedad{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
     .imagepy {
         grid-area: imagepy;
@@ -563,14 +661,16 @@ nav ul li {
         transform: translate(-50%, -50%);
         animation: latido 1.4s linear infinite;
         display: flex;
+        justify-content: center;
     }
     .logopy { 
         grid-area: logopy;
-        width: 160px;
-        height: 160px;
-        margin: 120px;
+        width: 100px;
+        height: 100px;
+        margin-left: 165px;
         margin-top: 10px;
         display: flex;
+        justify-content: center;
     }
     .sobre__move{
         display: none;
@@ -624,33 +724,49 @@ nav ul li {
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
+    .menu{
+        grid-area: menu;
+        background-color: none;
+        display: flex;
+        justify-content: center;
+    }
     nav ul{
-        margin-top: 100px;
+        margin-top: 20px;
         display: flex;
         list-style: none;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: column;
+    }
+    nav ul li {
+        font-family: fantasy;
+        padding: 25px 25px;
+        border-radius: 60px;
+        background-color: #e9ecef;
     }
     .imagedad{
         overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
     .imagepy {
         grid-area: imagepy;
-        width: 50px;
-        height: 30px;
-        margin-left: 150px;
-        margin-top: 50px;
+        width: 30px;
+        height: 20px;
+        margin-left: 125px;
+        margin-top: 30px;
         transform: translate(-50%, -50%);
         animation: latido 1.4s linear infinite;
         display: flex;
+        justify-content: center;
     }
     .logopy { 
         grid-area: logopy;
-        width: 160px;
-        height: 160px;
+        width: 75px;
+        height: 75px;
         margin: 120px;
         margin-top: 10px;
         display: flex;
+        justify-content: center;
     }
     .sobre__move{
         display: none;
