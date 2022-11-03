@@ -300,7 +300,7 @@ nav ul li {
   font-size: 32px;
   line-height: 64px;
   text-align: center;
-  color: #D9D9D9;
+  color: #000000;
 }
 
 .carta__contacto--datos {
@@ -478,6 +478,11 @@ nav ul li {
   justify-content: center;
 }
 
+iframe {
+  width: 560;
+  height: 320;
+}
+
 @keyframes latido {
   0% {
     transform: translate(-50%, -50%) scale(1);
@@ -631,8 +636,16 @@ nav ul li {
   .menu {
     grid-area: menu;
     background-color: transparent;
-    display: flex;
-    justify-content: center;
+  }
+  .carta__comida {
+    grid-area: imgcomi;
+    margin: 30px;
+    margin-top: 30px;
+  }
+  .carta__comida img {
+    grid-area: imgcomi;
+    width: 200px;
+    height: 200px;
   }
   nav ul {
     margin-top: 10px;
@@ -676,6 +689,10 @@ nav ul li {
     display: flex;
     justify-content: center;
   }
+  iframe {
+    width: 280;
+    height: 160;
+  }
   .sobre__move {
     display: none;
   }
@@ -697,7 +714,7 @@ nav ul li {
     justify-content: center;
   }
   .consultadad {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .nomape {
@@ -707,6 +724,16 @@ nav ul li {
   .numail {
     display: inline;
     justify-content: center;
+  }
+  .contactotext {
+    font-size: 28px;
+  }
+  .consultarta {
+    height: 150px;
+    text-align: left;
+    background: #D9D9D9;
+    margin: 20px;
+    padding: 65px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -724,6 +751,16 @@ nav ul li {
     background-color: transparent;
     display: flex;
     justify-content: center;
+  }
+  .carta__comida {
+    grid-area: imgcomi;
+    margin: 30px;
+    margin-top: 30px;
+  }
+  .carta__comida img {
+    grid-area: imgcomi;
+    width: 120px;
+    height: 120px;
   }
   nav ul {
     margin-top: 20px;
@@ -763,6 +800,10 @@ nav ul li {
     display: flex;
     justify-content: center;
   }
+  iframe {
+    width: 224;
+    height: 128;
+  }
   .sobre__move {
     display: none;
   }
@@ -784,7 +825,7 @@ nav ul li {
     justify-content: center;
   }
   .consultadad {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .nomape {
@@ -794,6 +835,9 @@ nav ul li {
   .numail {
     display: inline;
     justify-content: center;
+  }
+  .contactotext {
+    font-size: 20px;
   }
 }
 

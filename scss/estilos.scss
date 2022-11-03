@@ -288,7 +288,7 @@ nav ul{
     font-size: 32px;
     line-height: 64px;
     text-align: center;
-    color: $color-6;
+    color: $color-4;
 }
 .carta__contacto--datos{
     height: 650px;
@@ -442,6 +442,10 @@ nav ul{
 .botones{
     display: flex;
     justify-content: center;
+}
+iframe{
+    width: 560;
+    height: 320;
 }
 @keyframes latido {
     0%{
@@ -623,8 +627,16 @@ nav ul{
     .menu{
         grid-area: menu;
         background-color: transparent;
-        display: flex;
-        justify-content: center;
+    }
+    .carta__comida{
+        grid-area: imgcomi;
+        margin: 30px;
+        margin-top: 30px;
+            img{
+                grid-area: imgcomi;
+                width: 200px;
+                height: 200px;
+            }
     }
     nav ul{
         margin-top: 10px;
@@ -668,6 +680,10 @@ nav ul{
         display: flex;
         justify-content: center;
     }
+    iframe{
+        width: 280;
+        height: 160;
+    }
     .sobre__move{
         display: none;
     }
@@ -689,7 +705,7 @@ nav ul{
         justify-content: center;
     }
     .consultadad{
-        display: flex;
+        display: inline;
         justify-content: center;
     }
     .nomape{
@@ -699,6 +715,16 @@ nav ul{
     .numail{
         display: inline;
         justify-content: center;
+    }
+    .contactotext{
+        font-size: 28px;
+    }
+    .consultarta{
+        height: 150px;
+        text-align: left;
+        background: $color-6;
+        margin: 20px;
+        padding: 65px
     }
 }
 @media screen and (max-width: 480px) {
@@ -725,6 +751,16 @@ nav ul{
         background-color: transparent;
         display: flex;
         justify-content: center;
+    }
+    .carta__comida{
+        grid-area: imgcomi;
+        margin: 30px;
+        margin-top: 30px;
+            img{
+                grid-area: imgcomi;
+                width: 120px;
+                height: 120px;
+            }
     }
     nav ul{
         margin-top: 20px;
@@ -764,6 +800,10 @@ nav ul{
         display: flex;
         justify-content: center;
     }
+    iframe{
+        width: 224;
+        height: 128;
+    }
     .sobre__move{
         display: none;
     }
@@ -785,7 +825,7 @@ nav ul{
         justify-content: center;
     }
     .consultadad{
-        display: flex;
+        display: inline;
         justify-content: center;
     }
     .nomape{
@@ -795,5 +835,8 @@ nav ul{
     .numail{
         display: inline;
         justify-content: center;
+    }
+    .contactotext{
+        font-size: 20px;
     }
 }
