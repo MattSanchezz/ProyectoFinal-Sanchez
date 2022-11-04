@@ -411,38 +411,31 @@ nav ul{
             animation-iteration-count: infinite;
         }
 }
-.nombredad{
-    display: $display-1;
-    justify-content: $position-1;
-    height: 100px;
-}
 .apellidodad{
     display: $display-1;
     justify-content: $position-1;
 }
+.nombredad{
+    @extend .apellidodad;
+    height: 100px;
+}
 .numerodad{
-    display: $display-1;
-    justify-content: $position-1;
+    @extend .apellidodad;
 }
 .maildad{
-    display: $display-1;
-    justify-content: $position-1;
+    @extend .apellidodad;
 }
 .consultadad{
-    display: $display-1;
-    justify-content: $position-1;
+    @extend .apellidodad;
 }
 .nomape{
-    display: $display-1;
-    justify-content: $position-1;
+    @extend .apellidodad;
 }
 .numail{
-    display: $display-1;
-    justify-content: $position-1;
+    @extend .apellidodad;
 }
 .botones{
-    display: $display-1;
-    justify-content: $position-1;
+    @extend .apellidodad;
 }
 iframe{
     width: 560;
@@ -688,33 +681,33 @@ iframe{
     .sobre__move{
         display: none;
     }
+    .apellidodad{
+        display: $display-2;
+        justify-content: $position-1;
+    }
     .nombredad{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
         height: 100px;
     }
-    .apellidodad{
-        display: $display-1;
-        justify-content: $position-1;
-    }
     .numerodad{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .maildad{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .consultadad{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .nomape{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .numail{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .contactotext{
@@ -808,33 +801,34 @@ iframe{
     .sobre__move{
         display: none;
     }
+    .apellidodad{
+        display: $display-2;
+        justify-content: $position-1;
+    }
     .nombredad{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
         height: 100px;
     }
-    .apellidodad{
-        display: $display-1;
-        justify-content: $position-1;
-    }
+    
     .numerodad{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .maildad{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .consultadad{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .nomape{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .numail{
-        display: $display-1;
+        display: $display-2;
         justify-content: $position-1;
     }
     .contactotext{

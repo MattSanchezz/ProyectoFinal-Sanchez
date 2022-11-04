@@ -437,45 +437,13 @@ nav ul li {
   animation-iteration-count: infinite;
 }
 
+.apellidodad, .botones, .numail, .nomape, .consultadad, .maildad, .numerodad, .nombredad {
+  display: flex;
+  justify-content: center;
+}
+
 .nombredad {
-  display: flex;
-  justify-content: center;
   height: 100px;
-}
-
-.apellidodad {
-  display: flex;
-  justify-content: center;
-}
-
-.numerodad {
-  display: flex;
-  justify-content: center;
-}
-
-.maildad {
-  display: flex;
-  justify-content: center;
-}
-
-.consultadad {
-  display: flex;
-  justify-content: center;
-}
-
-.nomape {
-  display: flex;
-  justify-content: center;
-}
-
-.numail {
-  display: flex;
-  justify-content: center;
-}
-
-.botones {
-  display: flex;
-  justify-content: center;
 }
 
 iframe {
@@ -598,7 +566,7 @@ iframe {
     justify-content: center;
     height: 100px;
   }
-  .apellidodad {
+  .apellidodad, .nombredad, .numerodad, .maildad, .consultadad, .nomape, .numail, .botones {
     display: flex;
     justify-content: center;
   }
@@ -696,33 +664,33 @@ iframe {
   .sobre__move {
     display: none;
   }
+  .apellidodad, .nombredad, .numerodad, .maildad, .consultadad, .nomape, .numail, .botones {
+    display: inline;
+    justify-content: center;
+  }
   .nombredad {
-    display: flex;
+    display: inline;
     justify-content: center;
     height: 100px;
   }
-  .apellidodad {
-    display: flex;
-    justify-content: center;
-  }
   .numerodad {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .maildad {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .consultadad {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .nomape {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .numail {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .contactotext {
@@ -807,33 +775,33 @@ iframe {
   .sobre__move {
     display: none;
   }
+  .apellidodad, .nombredad, .numerodad, .maildad, .consultadad, .nomape, .numail, .botones {
+    display: inline;
+    justify-content: center;
+  }
   .nombredad {
-    display: flex;
+    display: inline;
     justify-content: center;
     height: 100px;
   }
-  .apellidodad {
-    display: flex;
-    justify-content: center;
-  }
   .numerodad {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .maildad {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .consultadad {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .nomape {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .numail {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .contactotext {
