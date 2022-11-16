@@ -15,12 +15,19 @@ body {
   grid-row-gap: 5px;
 }
 
+.logopydad {
+  grid-area: logopy;
+  display: flex;
+  justify-content: center;
+}
+
 .logopy {
   grid-area: logopy;
   width: 160px;
   height: 160px;
-  margin: 50px;
+  margin: 0px;
   margin-top: 20px;
+  border-radius: 50%;
 }
 
 .menu {
@@ -30,6 +37,8 @@ body {
 
 .imagedad {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .imagepy {
@@ -165,6 +174,11 @@ nav ul li {
   padding: 45px 45px;
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
+}
+nav ul li a {
+  text-shadow: 0 0 red;
+  color: #dc3545;
+  text-decoration: none;
 }
 
 .carta__comida {
@@ -507,20 +521,6 @@ iframe {
   #container {
     grid-template-areas: "logopy imagepy" "menu menu" "titulo titulo" "logobandera logobandera" "imgcomi rece" "proxrece proxrece" "copyr copyr";
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-  }
-  .imagedad {
-    overflow: hidden;
-  }
-  .imagepy {
-    grid-area: imagepy;
-    width: 125px;
-    height: 100px;
-    margin: 100px;
-    margin-top: 80px;
-    transform: translate(-50%, -50%);
-    animation: latido 1.4s linear infinite;
   }
 }
 @media screen and (max-width: 768px) {
@@ -530,177 +530,104 @@ iframe {
   #container {
     grid-template-areas: "imagepy" "logopy" "menu" "titulo" "logobandera" "imgcomi" "rece" "proxrece" "copyr";
     grid-template-columns: 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
   }
   .imagedad {
-    overflow: hidden;
     display: flex;
     justify-content: center;
   }
   .imagepy {
-    grid-area: imagepy;
-    width: 50px;
-    height: 30px;
-    margin-left: 150px;
-    margin-top: 35px;
-    transform: translate(-50%, -50%);
-    animation: latido 1.4s linear infinite;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    margin-left: 75px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
   }
   .logopy {
-    grid-area: logopy;
-    width: 100px;
-    height: 100px;
-    margin: 225px;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
   }
+  nav ul {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+  }
+  nav ul li {
+    font-family: fantasy;
+    padding: 25px 30px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+  }
   .sobre__move {
     display: none;
   }
-  .nombredad {
-    display: flex;
-    justify-content: center;
-    height: 100px;
-  }
-  .apellidodad, .nombredad, .numerodad, .maildad, .consultadad, .nomape, .numail, .botones {
-    display: flex;
-    justify-content: center;
-  }
-  .numerodad {
-    display: flex;
-    justify-content: center;
-  }
-  .maildad {
-    display: flex;
-    justify-content: center;
-  }
-  .consultadad {
-    display: flex;
-    justify-content: center;
-  }
   .nomape {
     display: inline;
-    justify-content: center;
   }
   .numail {
     display: inline;
-    justify-content: center;
   }
 }
 @media screen and (max-width: 650px) {
   body {
     background-color: #000000;
   }
-  #container {
-    grid-template-areas: "imagepy" "logopy" "menu" "titulo" "logobandera" "imgcomi" "rece" "proxrece" "copyr";
-    grid-template-columns: 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-  }
   .menu {
     grid-area: menu;
     background-color: transparent;
   }
-  .carta__comida {
-    grid-area: imgcomi;
-    margin: 30px;
-    margin-top: 30px;
-  }
   .carta__comida img {
-    grid-area: imgcomi;
     width: 200px;
     height: 200px;
   }
   nav ul {
     margin-top: 10px;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
     flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
   }
   nav ul li {
-    font-family: fantasy;
     padding: 20px 20px;
-    border-radius: 30px;
     background-color: #e9ecef;
     display: flex;
     justify-content: center;
   }
-  .imagedad {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-  }
   .imagepy {
-    grid-area: imagepy;
-    width: 50px;
-    height: 30px;
-    margin-left: 150px;
     margin-top: 50px;
-    transform: translate(-50%, -50%);
-    animation: latido 1.4s linear infinite;
-    display: flex;
-    justify-content: center;
   }
   .logopy {
-    grid-area: logopy;
-    width: 100px;
-    height: 100px;
-    margin-left: 165px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    margin-left: 30px;
   }
   iframe {
     width: 280;
     height: 160;
   }
-  .sobre__move {
-    display: none;
-  }
   .apellidodad, .nombredad, .numerodad, .maildad, .consultadad, .nomape, .numail, .botones {
     display: inline;
-    justify-content: center;
   }
   .nombredad {
     display: inline;
-    justify-content: center;
-    height: 100px;
   }
   .numerodad {
     display: inline;
-    justify-content: center;
   }
   .maildad {
     display: inline;
-    justify-content: center;
   }
   .consultadad {
     display: inline;
-    justify-content: center;
-  }
-  .nomape {
-    display: inline;
-    justify-content: center;
-  }
-  .numail {
-    display: inline;
-    justify-content: center;
   }
   .contactotext {
     font-size: 28px;
   }
   .consultarta {
-    height: 150px;
-    text-align: left;
-    background: #D9D9D9;
-    margin: 20px;
     padding: 65px;
   }
 }
@@ -708,101 +635,38 @@ iframe {
   body {
     background-color: #000000;
   }
-  #container {
-    grid-template-areas: "imagepy" "logopy" "menu" "titulo" "logobandera" "imgcomi" "rece" "proxrece" "copyr";
-    grid-template-columns: 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-  }
   .menu {
     grid-area: menu;
     background-color: transparent;
     display: flex;
     justify-content: center;
   }
-  .carta__comida {
-    grid-area: imgcomi;
-    margin: 30px;
-    margin-top: 30px;
-  }
   .carta__comida img {
-    grid-area: imgcomi;
     width: 120px;
     height: 120px;
   }
   nav ul {
     margin-top: 20px;
-    display: flex;
-    list-style: none;
-    display: flex;
     justify-content: center;
   }
   nav ul li {
-    font-family: fantasy;
     padding: 25px 25px;
     border-radius: 60px;
-    background-color: #e9ecef;
-  }
-  .imagedad {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
   }
   .imagepy {
-    grid-area: imagepy;
-    width: 30px;
-    height: 20px;
-    margin-left: 125px;
-    margin-top: 30px;
-    transform: translate(-50%, -50%);
-    animation: latido 1.4s linear infinite;
-    display: flex;
-    justify-content: center;
+    width: 45px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 40px;
   }
   .logopy {
-    grid-area: logopy;
-    width: 75px;
-    height: 75px;
-    margin: 120px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    width: 125px;
+    height: 125px;
+    margin: 20px;
   }
   iframe {
     width: 224;
     height: 128;
-  }
-  .sobre__move {
-    display: none;
-  }
-  .apellidodad, .nombredad, .numerodad, .maildad, .consultadad, .nomape, .numail, .botones {
-    display: inline;
-    justify-content: center;
-  }
-  .nombredad {
-    display: inline;
-    justify-content: center;
-    height: 100px;
-  }
-  .numerodad {
-    display: inline;
-    justify-content: center;
-  }
-  .maildad {
-    display: inline;
-    justify-content: center;
-  }
-  .consultadad {
-    display: inline;
-    justify-content: center;
-  }
-  .nomape {
-    display: inline;
-    justify-content: center;
-  }
-  .numail {
-    display: inline;
-    justify-content: center;
   }
   .contactotext {
     font-size: 20px;
