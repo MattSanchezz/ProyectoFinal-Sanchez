@@ -424,10 +424,11 @@ nav ul li a {
 }
 
 .limpiar {
-  width: 90px;
-  height: 30px;
-  margin-top: 10px;
+  width: 75px;
+  height: 45px;
+  margin-top: 1px;
   background: #DD647A;
+  border-color: red;
 }
 
 .enviar {
@@ -451,6 +452,12 @@ nav ul li a {
 .sobre__move:hover {
   animation: agitar 1s;
   animation-iteration-count: infinite;
+}
+
+.btn-primary {
+  color: #282828;
+  background-color: #198754;
+  border-color: #64dd7f;
 }
 
 .apellidodad, .botones, .numail, .nomape, .consultadad, .maildad, .numerodad, .nombredad {
@@ -612,19 +619,19 @@ iframe {
     height: 160;
   }
   .apellidodad, .nombredad, .numerodad, .maildad, .consultadad, .nomape, .numail, .botones {
-    display: inline;
+    display: flex;
   }
   .nombredad {
-    display: inline;
+    display: flex;
   }
   .numerodad {
-    display: inline;
+    display: flex;
   }
   .maildad {
-    display: inline;
+    display: flex;
   }
   .consultadad {
-    display: inline;
+    display: flex;
   }
   .contactotext {
     font-size: 28px;

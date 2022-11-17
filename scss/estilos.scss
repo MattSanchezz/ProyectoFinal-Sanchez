@@ -403,10 +403,11 @@ nav ul{
     padding: 100px
 }
 .limpiar{
-    width: 90px;
-    height: 30px;
-    margin-top: 10px;
+    width: 75px;
+    height: 45px;
+    margin-top: 1px;
     background: $color-7;
+    border-color: $color-10;
 }
 .enviar{
     width: 90px;
@@ -428,6 +429,11 @@ nav ul{
             animation: agitar 1s;
             animation-iteration-count: infinite;
         }
+}
+.btn-primary {
+    color: $color-2;
+    background-color: $color-12;
+    border-color: $color-8;
 }
 .apellidodad{
     display: $display-1;
@@ -540,7 +546,7 @@ iframe{
         "logopy"
         "menu"
         "titulo"
-        "logobandera"
+        "logobandera" 
         "imgcomi"
         "rece"
         "proxrece"
@@ -645,19 +651,19 @@ iframe{
     .sobre__move{
     }
     .apellidodad{
-        display: $display-2;
+        display: $display-1;
     }
     .nombredad{
-        display: $display-2;
+        display: $display-1;
     }
     .numerodad{
-        display: $display-2;
+        display: $display-1;
     }
     .maildad{
-        display: $display-2;
+        display: $display-1;
     }
     .consultadad{
-        display: $display-2;
+        display: $display-1;
     }
     .nomape{
     }
