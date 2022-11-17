@@ -299,7 +299,7 @@ nav ul{
     background: $color-6;
 }
 .contactotext{
-    height: 220px;
+    height: auto;
     margin-top: 30px;
     font-family: $letra-principal;
     font-style: normal;
@@ -310,7 +310,7 @@ nav ul{
     color: $color-4;
 }
 .carta__contacto--datos{
-    height: 650px;
+    height: auto;
     margin-top: 20px;
     background: $color-4;
 }
@@ -460,6 +460,7 @@ nav ul{
 }
 .botones{
     @extend .apellidodad;
+    margin-bottom: 15px;
 }
 iframe{
     width: 560;
@@ -651,23 +652,27 @@ iframe{
     .sobre__move{
     }
     .apellidodad{
-        display: $display-1;
+        display: grid;
     }
     .nombredad{
-        display: $display-1;
+        display: grid;
     }
     .numerodad{
-        display: $display-1;
+        display: grid;
     }
     .maildad{
-        display: $display-1;
+        display: grid;
     }
     .consultadad{
-        display: $display-1;
+        display: grid;
     }
     .nomape{
+        display: grid;
+        justify-content: center;
     }
     .numail{
+        display: grid;
+        justify-content: center;
     }
     .contactotext{
         font-size: 28px;
@@ -738,5 +743,9 @@ iframe{
     }
     .contactotext{
         font-size: 20px;
+    }
+    .consultarta{
+        height: auto;
+        width: 200px;
     }
 }

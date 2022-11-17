@@ -308,7 +308,7 @@ nav ul li a {
 }
 
 .contactotext {
-  height: 220px;
+  height: auto;
   margin-top: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
@@ -320,7 +320,7 @@ nav ul li a {
 }
 
 .carta__contacto--datos {
-  height: 650px;
+  height: auto;
   margin-top: 20px;
   background: #000000;
 }
@@ -467,6 +467,10 @@ nav ul li a {
 
 .nombredad {
   height: 100px;
+}
+
+.botones {
+  margin-bottom: 15px;
 }
 
 iframe {
@@ -619,19 +623,27 @@ iframe {
     height: 160;
   }
   .apellidodad, .nombredad, .numerodad, .maildad, .consultadad, .nomape, .numail, .botones {
-    display: flex;
+    display: grid;
   }
   .nombredad {
-    display: flex;
+    display: grid;
   }
   .numerodad {
-    display: flex;
+    display: grid;
   }
   .maildad {
-    display: flex;
+    display: grid;
   }
   .consultadad {
-    display: flex;
+    display: grid;
+  }
+  .nomape {
+    display: grid;
+    justify-content: center;
+  }
+  .numail {
+    display: grid;
+    justify-content: center;
   }
   .contactotext {
     font-size: 28px;
@@ -679,6 +691,10 @@ iframe {
   }
   .contactotext {
     font-size: 20px;
+  }
+  .consultarta {
+    height: auto;
+    width: 200px;
   }
 }
 
