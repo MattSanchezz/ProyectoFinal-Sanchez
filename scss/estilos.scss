@@ -184,8 +184,12 @@ nav ul{
     grid-area: imgcomi;
     margin: 30px;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
         img{
             grid-area: imgcomi;
+            margin: 30px;
+            height: auto;
         }
 }
 
@@ -198,12 +202,15 @@ nav ul{
 .carta__ingredientes{
     grid-area: rece;
     background: $color-6;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .carta__video{
     grid-area: proxrece;
     margin: 30px;
     margin-top: 30px;
     background: $color-6;
+    height: auto;
 }
 .imgcomida{
     margin: 30px;
@@ -247,34 +254,33 @@ nav ul{
     margin-top: 45px;
     display: $display-1;
     justify-content: $position-1;
+    margin-bottom: 15px;
 }
 .carta__masa{
     grid-area: rece;
     top: 64px;
+    display: flex;
+    justify-content: space-around;
 }
 .carta__relleno{
     grid-area: rece;
     top: 64px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 60px;
 }
 .masa{
     grid-area: rece;
-    top: 0px;  
-    font-family: $letra-menu;
-    font-style: normal;
+    top: 0px;
+    font-family: fantasy;
+    font-style: oblique;
     font-weight: 380;
-    font-size: 16px;
+    font-size: 25px;
     line-height: 32px;
-    color: $color-4;
+    color: $color-10;
 }
 .relleno{
-    grid-area: rece;
-    top: 0px;
-    font-family: $letra-menu;
-    font-style: normal;
-    font-weight: 380;
-    font-size: 16px;
-    line-height: 32px;
-    color: $color-4;
+    @extend .masa;
 }
 .lista__pastel{
     grid-area: rece;
@@ -516,7 +522,7 @@ iframe{
         "imgcomi rece"
         "proxrece proxrece"
         "copyr copyr";
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
     }
     .imagedad{
     }

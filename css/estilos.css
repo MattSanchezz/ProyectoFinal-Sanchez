@@ -185,9 +185,13 @@ nav ul li a {
   grid-area: imgcomi;
   margin: 30px;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 .carta__comida img {
   grid-area: imgcomi;
+  margin: 30px;
+  height: auto;
 }
 
 .carta__ingredientes__son {
@@ -199,6 +203,8 @@ nav ul li a {
 .carta__ingredientes {
   grid-area: rece;
   background: #D9D9D9;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .carta__video {
@@ -206,6 +212,7 @@ nav ul li a {
   margin: 30px;
   margin-top: 30px;
   background: #D9D9D9;
+  height: auto;
 }
 
 .imgcomida {
@@ -254,38 +261,33 @@ nav ul li a {
   margin-top: 45px;
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
 }
 
 .carta__masa {
   grid-area: rece;
   top: 64px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .carta__relleno {
   grid-area: rece;
   top: 64px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 60px;
 }
 
-.masa {
+.masa, .relleno {
   grid-area: rece;
   top: 0px;
   font-family: fantasy;
-  font-style: normal;
+  font-style: oblique;
   font-weight: 380;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 32px;
-  color: #000000;
-}
-
-.relleno {
-  grid-area: rece;
-  top: 0px;
-  font-family: fantasy;
-  font-style: normal;
-  font-weight: 380;
-  font-size: 16px;
-  line-height: 32px;
-  color: #000000;
+  color: red;
 }
 
 .lista__pastel {
@@ -520,7 +522,7 @@ iframe {
 @media screen and (max-width: 1300px) {
   #container {
     grid-template-areas: "logopy imagepy" "menu menu" "titulo titulo" "logobandera logobandera" "imgcomi rece" "proxrece proxrece" "copyr copyr";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
   }
 }
 @media screen and (max-width: 768px) {
